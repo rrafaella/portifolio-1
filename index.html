@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Meu Financeiro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app">
+
+    <div class="topo">
+      <h1>Meu Financeiro</h1>
+      <p>Organize sua vida financeira</p>
+    </div>
+
+    <div class="saldo">
+      <span>Saldo total</span>
+      <strong id="total">R$ 0,00</strong>
+    </div>
+
+    <form id="form">
+      <input type="text" id="descricao" placeholder="Descrição" required>
+      <input type="number" id="valor" placeholder="Valor" required>
+
+      <select id="tipo">
+        <option value="entrada">Entrada</option>
+        <option value="saida">Saída</option>
+      </select>
+
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <section class="movimentacoes">
+      <h2>Movimentações</h2>
+      <ul id="lista"></ul>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
